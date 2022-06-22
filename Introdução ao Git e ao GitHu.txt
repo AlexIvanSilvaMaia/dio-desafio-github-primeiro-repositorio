@@ -1,0 +1,32 @@
+Introdução ao Git e ao GitHub
+
+Comando básico para um bom desempenho no terminal:
+Windons : cd; dir; mkdir; del/rmdir
+Unix: cd; ls; mkdir; rm-rf
+            (Windons):
+dir – Lista pastas
+cd/ - Navegar entre as pastas
+cd Windons – Acessa a pasta windons
+cd.. – Retorna a pasta anterior
+mkdir – Criar Pasta
+echo “nome do arquivo” > Hello.txt – Criar arquivos
+del “Nome da pasta” – Deleta arquivos entro da pasta
+rmdir “Nome da pasta” – Deleta pasta
+
+SHA1 – (Secure Hash Algorithm (Algortmo de Hash Seguro), é um conjunto de funções hash criptográficas pela NSA (Agência de Segurança Nacional dos EUA)
+	A encriptação gera conjunto de caracteres identificador de 40 dígitos 
+openssl sha1 “Nome do arquivo.txt”
+
+Chaves SSH
+Gerar chave (Windons):  
+	Acessar o Git Bash e digitar o comando:
+	  ssh– keygen -t ed25519 -C “E-mail cadastrado no GitHub”  
+	Digita uma senha
+
+comando: cat id-ed25519.pub (parta ver o conteúdo da chave)
+Copiar a chave pública e colar no Chaves SSH no perfil do GitHub
+
+Para funcionar no GitHub será necessário fazer o processo abaixo:
+Digitar o comando: eval $(ssh-agent - s)
+Digitar o comando (chave privada): ssh-add id-ed25519
+
